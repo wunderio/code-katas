@@ -1,0 +1,8 @@
+{
+    "name": "wunder/code-katas",
+    "type": "project",
+    "require": {},
+    "require-dev": {
+        "codeception/codeception": "^2.5"
+    }
+}
