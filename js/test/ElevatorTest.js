@@ -37,11 +37,13 @@ class Elevator {
   }
 
   /**
-   * Get the next destination floor.
+   * Get the next destination floor. Call this method multiple times to
+   * get the sequence of floors that the elevator should visit next.
+   *
    * @returns floor
    */
   getNextFloor() {
-    return 0;
+    return this.currentFloor;
   }
 }
 
@@ -49,5 +51,15 @@ describe('Elevator', function() {
   it('stays at the initial floor without input', function() {
     const elevator = new Elevator(0);
     assert.strictEqual(0, elevator.getNextFloor());
+  });
+
+  it('stays at the initial non-zero floor', function() {
+    const elevator = new Elevator(1);
+    assert.strictEqual(1, elevator.getNextFloor());
+  });
+
+  it('stays at the initial non-zero floor', function() {
+    const elevator = new Elevator(2);
+    assert.strictEqual(2, elevator.getNextFloor());
   });
 });
