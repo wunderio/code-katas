@@ -1,4 +1,4 @@
-var assert = require('assert');
+const assert = require('assert');
 
 /**
  * Takes in a string and adds new lines as needed
@@ -17,7 +17,7 @@ describe('StringWrapper', function() {
   it('should wrap short strings', function() {
     const input = 'a';
     const output = wrapStrings(input, 3);
-    assert.equal('a', output);
+    assert.strictEqual('a', output);
   });
 
 });

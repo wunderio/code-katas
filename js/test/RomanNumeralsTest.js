@@ -1,4 +1,4 @@
-var assert = require('assert');
+const assert = require('assert');
 
 /**
  * Takes in a positive integer and returns a string with
@@ -15,6 +15,6 @@ describe('RomanNumerals', function() {
   it('supports the number one', function() {
     const input = 1;
     const output = romanNumeral(input);
-    assert.equal('I', output);
-  })
+    assert.strictEqual('I', output);
+  });
 });
