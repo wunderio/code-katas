@@ -47,18 +47,18 @@ class Elevator {
   }
 }
 
-describe('Elevator', function() {
-  it('stays at the initial floor without input', function() {
+describe('Elevator', () => {
+  it('stays at the initial floor without input', () => {
     const elevator = new Elevator(0);
     assert.strictEqual(0, elevator.getNextFloor());
   });
 
-  it('stays at the initial non-zero floor', function() {
+  it('stays at the initial non-zero floor', () => {
     const elevator = new Elevator(1);
     assert.strictEqual(1, elevator.getNextFloor());
   });
 
-  it('stays at the initial non-zero floor', function() {
+  it('stays at the initial non-zero floor', () => {
     const elevator = new Elevator(2);
     assert.strictEqual(2, elevator.getNextFloor());
   });

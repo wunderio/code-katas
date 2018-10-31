@@ -13,11 +13,10 @@ function wrapStrings(string, length) {
   return string;
 }
 
-describe('StringWrapper', function() {
-  it('should wrap short strings', function() {
+describe('StringWrapper', () => {
+  it('should wrap short strings', () => {
     const input = 'a';
     const output = wrapStrings(input, 3);
     assert.strictEqual('a', output);
   });
-
 });

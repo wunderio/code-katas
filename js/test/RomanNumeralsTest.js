@@ -11,8 +11,8 @@ function romanNumeral(number) {
   return 'I';
 }
 
-describe('RomanNumerals', function() {
-  it('supports the number one', function() {
+describe('RomanNumerals', () => {
+  it('supports the number one', () => {
     const input = 1;
     const output = romanNumeral(input);
     assert.strictEqual('I', output);
