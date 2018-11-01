@@ -43,6 +43,10 @@ describe('sorting function', () => {
   });
 });
 ```
+For the sake of simplicity we use the built-in node.js assert module, check the
+[official documentation](https://nodejs.org/api/assert.html) to see all the API
+options. We could also use a dedicated assertion library like
+[ChaiJS](https://www.chaijs.com/).
 
 The initial implementation is also minimal, just covering the most basic 
 implementation that will make the tests pass.
